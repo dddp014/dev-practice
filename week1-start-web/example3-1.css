@@ -1,0 +1,102 @@
+/* CSS 기본 개념 */
+.css-test-div {
+  background-color: greenyellow;
+}
+
+.css-test-span {
+  background-color: yellow;
+}
+
+/* CSS 선택자의 종류 */
+body {
+  background-color: rgb(255, 245, 233);
+}
+
+#example1 {
+  background-color: lavender;
+}
+
+.example2 {
+  background-color: rgb(255, 187, 221);
+}
+
+/* CSS 주요 속성 */
+#example3 {
+  width: 100%;
+  height: 200px;
+
+  color: red;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border: 2px dashed blue;
+
+  background-image: url("https://flexible.img.hani.co.kr/flexible/normal/970/637/imgdb/original/2024/0303/20240303500838.jpg");
+  background-size: 30% auto;
+  background-repeat: repeat;
+  background-position: center;
+
+  margin-left: 10px;
+  margin: 10px; /* 전체 10px */
+  margin: 10px 20px; /* 상하 10px, 좌우 20px */
+  margin: 20px 10px 30px; /* 상 20px, 좌우 10px, 하 30px */
+  margin: 20px 30px 20px 10px; /* 상 20px, 우 10px, 하 30px, 좌 20px */
+}
+
+#example3 span {
+    background-color: azure;
+}
+
+#example4 {
+  width: 100%;
+  height: 200px;
+
+  color: red;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+
+  border: 2.5px solid blue;
+  border-radius: 30px;
+
+  background-color: azure;
+  background-image: url("https://kufc.or.kr/data/file/product2/2_copy_4_1_copy_2_1926218923_uK0iPczA_0ae1568a0aba9f3dc53ea8d61c7315c241925644.jpg");
+  background-size: 30% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-left: 10px;
+  padding: 10px; /* 전체 10px */
+  padding: 10px 20px; /* 상하 10px, 좌우 20px */
+  padding: 20px 10px 30px; /* 상 20px, 좌우 10px, 하 30px */
+  padding: 20px 30px 20px 10px; /* 상 20px, 우 10px, 하 30px, 좌 20px */
+}
+
+/* 요소의 상속 개념 */
+/* body div div { color: blue; } */
+.child1 {
+  color: brown;
+}
+body div.child2 {
+  color: red;
+}
+body div .child3 {
+  color: aqua;
+}
+div span {
+  color: green;
+}
+
+/* CSS 적용 우선순위 */
+#id {
+  color: rgb(54, 93, 167);
+}
+.class {
+  color: pink;
+}

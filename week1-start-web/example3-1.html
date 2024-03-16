@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS 기본 개념</title>
+
+    <link rel="stylesheet" href="main-css.css" />
+    <link rel="stylesheet" href="example3-1.css" />
+
+    <style>
+      .css-test-div {
+        background-color: skyblue;
+      }
+
+      .css-test-span {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- index -->
+    <div class="index">
+      <a href="index.html">Index</a>
+    </div>
+
+    <!-- CSS 기본 개념 -->
+    <!-- CSS Inline Style -->
+    <div class="first-div">
+      <div class="first-explain">CSS Inline Style 인라인 스타일</div>
+      <div class="add-explain">
+        - 우선 순위가 가장 높지만, 코드 재활용이 좋지 않다.<br />
+        - 테스트 용으로만 사용하고, 가급적 쓰지 않는 것이 좋다.
+      </div>
+
+      <div class="css-test-div" style="background-color: rgb(85, 130, 255)">
+        Inline Style div
+        <span class="css-test-span" style="background-color: rgb(255, 125, 125)"
+          >Inline Style span</span
+        >
+      </div>
+    </div>
+
+    <!-- CSS Internal Style -->
+    <div class="first-div">
+      <div class="first-explain">CSS Internal Style 내부 스타일</div>
+      <div class="add-explain">
+        - Inline Style 다음으로 우선순위가 높다.<br />
+        - 특정 페이지에서만 적용하기 위해서 사용한다.<br />
+        - 주로 &lt;head&gt; 태그 안에 정의한다.<br />
+        - 많이 사용하지는 않는다.
+      </div>
+
+      <div class="css-test-div">
+        Internal Style div
+        <span class="css-test-span">Internal Style span</span>
+      </div>
+    </div>
+
+    <!-- CSS External Style -->
+    <div class="first-div">
+      <div class="first-explain">CSS External Style 외부 스타일</div>
+      <div class="add-explain">
+        우선순위는 가장 낮지만, 가장 많이 사용하는 방식이다.<br />
+        협업에 우수하고, 여러 HTML에 동일한 스타일을 적용할 수 있다.
+      </div>
+
+      <div class="css-test-div">
+        External Style div
+        <span class="css-test-span">External Style span</span>
+      </div>
+    </div>
+
+    <!-- CSS 선택자의 종류 -->
+    <div class="first-div">
+      <div class="first-explain">CSS 선택자의 종류</div>
+      body선택자
+      <div id="example1">
+        #id선택자
+        <span class="example2">.class선택자</span>
+      </div>
+    </div>
+
+    <!-- CSS 주요 속성 -->
+    <div class="first-div">
+      <div class="first-explain">CSS 주요 속성</div>
+      <div id="example3">
+        <span class="font">
+            border<br/>
+            background-image / size / repeat / position<br/>
+            margin
+        </span>
+      </div>
+      <div id="example4">
+        border-radius<br/>
+        background-color<br/>
+        padding
+    </div>
+    </div>
+
+    <!-- 요소의 상속 개념 -->
+    <div class="first-div">
+      <div class="first-explain">요소의 상속 개념</div>
+      <div class="child1">
+        .child1
+        <span>div span</span>
+      </div>
+      <div class="child2">
+        body div.child2 : body안의 div인 .child2
+        <span>child2의 span</span>
+      </div>
+      <div class="child3">body div .child3 : body안의 div안의 .child3</div>
+    </div>
+
+    <!-- CSS 적용 우선순위 -->
+    <div class="first-div">
+        <div class="first-explain">CSS 적용 우선순위</div>
+        <div class="class" id="id">
+            <ul>
+                <li>아래에 작성된 코드 → 위에 작성된 코드</li>
+                <li>Inline Style → Internal Style → External Style</li>
+                <li>id → class → body</li>
+                <li>디테일하게 선언된 코드</li>
+            </ul>
+        </div>
+    </div>
+  </body>
+</html>
