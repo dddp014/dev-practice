@@ -1,0 +1,45 @@
+/* Index */
+.index {
+    margin-bottom: 50px;
+}
+
+.index a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.index a:hover {
+    color: hotpink;
+}
+
+/* Contents */
+.first-div {
+    margin-bottom: 70px;
+}
+
+.second-div {
+    margin-bottom: 40px;
+}
+
+.third-div {
+    background-color: rgba(149, 177, 239, 0.15);
+    padding: 10px 20px;
+}
+
+.first-explain {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.add-explain {
+    color:royalblue;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.explain {
+    /* color: royalblue; */
+    font-weight: 600;
+    margin-bottom: 15px;
+}

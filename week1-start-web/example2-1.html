@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML 구조</title>
+        
+        <link rel="stylesheet" href="main-css.css" />
+    </head>
+    <body>
+
+        <!-- index -->
+        <div class="index">
+            <a href="index.html">Index</a>
+        </div>
+
+        <!-- HTML 구조 -->
+        <!-- block, inline 요소 -->
+        <div class="first-div">
+            <div class="first-explain">block, inline 요소 : 각각의 태그는 의미하는 바가 있다.</div>
+
+            <!-- block 요소 -->
+            <div class="second-div">
+                <div class="explain">block 요소 : 한줄 모두 차지. y축 정렬 가능</div>
+                <div class="third-div">
+                    <h3>&lt;h1&gt; ~ &lt;h6&gt; 태그</h3>
+    
+                    <p>&lt;p&gt; 태그</p>
+    
+                    <ul>&lt;ul&gt; 태그
+                        <li>&lt;li&gt; 태그</li>
+                    </ul>
+                    
+                    <ol>&lt;ol&gt; 태그
+                        <li>&lt;li&gt; 태그</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- inline 요소 -->
+            <div class="second-div">
+                <div class="explain">inline 요소 : 포함된 내용만큼만 차지. x축 정렬 가능</div>
+                
+                <div class="third-div">
+                    <a>&lt;a&gt; 태그</a>
+                    <img />&lt;img&gt; 태그
+                    <strong>&lt;strong&gt; 태그</strong>
+                    <em>&lt;em&gt; 태그</em>
+                </div>
+            </div>
+        </div>
+
+        <!-- div, span 태그 -->
+        <div class="first-div">
+            <div class="first-explain">div, span 태그 : 단순히 공간을 구분한다.</div>
+
+            <!-- div 태그 -->
+            <div class="second-div">
+                <div class="explain">div 태그 : block 단위의 공간을 구분한다.</div>
+
+                <div class="third-div">
+                    <div>div 영역1</div>
+                    <div>div 영역2</div>
+                </div>
+            </div>
+            
+            <!-- span 태그 -->
+            <div class="second-div">
+                <div class="explain">span 태그 : inline 단위의 공간을 구분한다.</div>
+
+                <div class="third-div">
+                    <span>span 영역1</span>
+                    <span>span 영역2</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 일반적인 웹사이트 구조 -->
+        <div class="first-div">
+
+            <div class="first-explain">header, nav, main, article, footer 태그</div>
+            <div class="add-explain">
+                *요새는 header, nav, main, footer 등을 구분하기보다, div에 id, role을 사용하여 구분한다.<br/>
+                그러나 구형 브라우저를 지원할 필요가 없다면, role = "main" 보다 &lt;main&gt; 요소를 사용하는 것이 좋다.
+            </div>
+
+            <!-- header, nav 태그 -->
+            <div class="second-div">
+                <div class="explain">
+                    header 태그 : 웹사이트의 머리글<br/>
+                    nav 태그 : 웹사이트의 메뉴 버튼
+                </div>
+
+                <div class="third-div">
+                    <header>header 영역
+                        <nav>nav 영역
+                            <ul>
+                                <li><a>메뉴1</a></li>
+                                <li><a>메뉴2</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+
+            <!-- main, article 태그 -->
+            <div class="second-div">
+                <div class="explain">
+                    main 태그 : body 내의 주요 컨텐츠<br/>
+                    article 태그 : 웹사이트 내의 독립적인 구분 e.g.블로그 글, 뉴스 기사
+                </div>
+
+                <div class="third-div">
+                    <main>
+                        <article>
+                            <h1>오늘의 일기</h1> <!-- article 내의 필수요소-->
+                            <p>하늘이 정말 푸르다.</p>
+                        </article>
+                    </main>
+                </div>
+            </div>
+
+            <!-- footer 태그 -->
+            <div class="second-div">
+                <div class="explain">footer 태그 : 웹사이트 맨 하단 영역</div>
+
+                <div class="third-div">
+                    <footer>
+                        <div>
+                            주소 : 서울시 강남구
+                        </div>
+                    </footer>
+                </div>
+            </div>
+
+        </div>
+        
+    </body>
+</html>
