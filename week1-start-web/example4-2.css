@@ -1,45 +1,86 @@
-.main-div {
-    font-weight: bold;
-    margin-top: 30px;
+/* display */
+.container-div {
+    margin-bottom: 100px;
 }
 
-#box1 {
-    width: 100%;
-    height: 200px;
-    background-color: yellow;
-    margin-bottom: 150px;
+.first-div {
+    font-size: 17pt;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-#box2 {
-    width: 100%;
-    height: 200px;
+.second-div {
+    font-weight: 600;
+    margin: 0;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+.wrapper-div {
+    margin-bottom: 30px;
+    border: 1px solid;
+}
+
+.inline {
     background-color: pink;
-    margin-top: 100px;
+    display: inline;
 }
 
-#box3 {
-    width: 100%;
-    height: 250px;
-    background-color: lightblue;
-}
-
-#box4 {
-    width: 150px;
+.block {
+    width: 250px;
     height: 100px;
-    background-color: rgb(255, 145, 145);
-    margin-top: 100px;
+    background-color: bisque;
+    display: block;
 }
 
-#box5 {
-    width: 100%;
-    height: 250px;
-    background-color: lightblue;
-}
-
-#box6 {
-    width: 150px;
+.inline-block {
+    width: 250px;
     height: 100px;
-    background-color: rgb(255, 145, 145);
-    margin-top: 100px;
-    position: absolute;
+    background-color: lightblue;
+    display: inline-block;
+    margin: 0
+}
+
+
+/* float */
+.left1 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+}
+
+.left2 {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    float: left;
+}
+
+.right1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(210, 224, 210);
+    float: right;
+}
+
+.right2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(186, 225, 239);
+    float: right;
+}
+
+.non-float {
+    height: 100px;
+    background-color: thistle;
+}
+
+
+/* clear */
+.clear {
+    clear: both;
+    background-color: thistle;
 }

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <title>여러 개의 div 정렬</title>
+        <meta charset="UTF-8">
+        <title>margin 병합 현상</title>
 
         <link rel="stylesheet" href="main-css.css" />
-        <link rel="stylesheet" href="example4-1.css" />
+        <link rel="stylesheet" href="example4-1.css">
     </head>
     <body>
         <!-- index -->
@@ -13,25 +13,28 @@
             <a href="index.html">Index</a>
         </div>
 
-        <!-- 여러 개의 div 정렬 -->
-        <header class="head">
-            <div id="orangePiece"></div>
-            <div id="yellowPiece"></div>
-        </header>
-        
-        
-        <main role="main">
-            <div id = "leftPiece"></div>
-            <div id = "rightPiece"></div>
-            
-            <div id = "purplePiece"></div>
-            <div id = "greenPiece"></div>
-        </main>
-        
-        
-        <footer class="foot">
-            <div id="orangePiece"></div>
-            <div id="yellowPiece"></div>
-        </footer>
+        <!-- margin 병합 현상  -->
+        <!-- 형제 간의 margin 병합 -->
+        <div class="main-div">형제 간의 margin 병합</div>
+        <div>margin-bottom과 bottom-top 중 숫자가 큰 값으로 적용된다.</div>
+        <div id="box1">margin-bottom: 150px;</div>
+        <div id="box2">margin-top: 100px;</div>
+
+        <!-- 부모 자식 간의 margin 병합 -->
+        <div class="main-div">부모 자식 간의 margin 병합</div>
+        <div>자식 요소에 margin을 적용하면 부모 요소에도 영향을 미칠 수 있다.</div>
+        <div id="box3">
+            <div id="box4">margin-top: 50px;</div>
+        </div>
+
+        <!-- 부모 자식 간 독립적으로 존재 -->
+        <div class="main-div">부모 자식 간 독립적으로 존재</div>
+        <div>자식 요소에 position: absolute을 적용하면 부모 요소에도 영향을 미치지 않는다.</div>
+        <div id="box5">
+            <div id="box6">
+                margin-top: 50px;<br>
+                position: absolute;
+            </div>
+        </div>
     </body>
 </html>
